@@ -1,0 +1,47 @@
+@import '../abstracts/mixins.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/templates.scss';
+
+.header {
+  width: 100%;
+  background-color: #d9d9d9;
+  font-size: 20px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: {
+      top: 44px;
+      bottom: 44px;
+    }
+  }
+
+  &__button {
+    @extend %resetButton;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $paragraph_font-family;
+    width: 164px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  &__menu {
+    @extend %resetTable;
+    display: flex;
+    column-gap: 50px;
+  }
+
+  &__social-webs {
+    @extend %resetTable;
+    display: flex;
+    column-gap: 50px;
+  }
+  
+
+}

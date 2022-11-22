@@ -1,0 +1,10 @@
+.photo-gallery {
+  margin: {
+    top: 134px;
+  }
+  display: grid;
+  grid-template-columns: repeat(3, 512px);
+  grid-auto-rows: 512px;
+  row-gap: 74px;
+  column-gap: 101px;
+}
